@@ -8,6 +8,7 @@ pages=[]
 pageranks=[]
 eredmenyek=[]
 valasz = []
+
 #oldalak beolvasasa
 for i in range(1,pagenumber+1):
 	actline = lines[i].split()
@@ -23,11 +24,18 @@ for url in pages:
 	if matchobj:
 		eredmenyek.append(matchobj.group())
 
+if (len(eredmenyek)>0):
+	for e in eredmenyek:
+		i = pages.index(e)
+		#egyszerusegbol a pageranket elore raktam, konnyebb rendezni
+		valasz.append("{} {} {} \n".format(pageranks[i],pages[i],i+1))
+		valasz.sort()
+	#csokkeno
+	valasz.reverse()
+	eg.textbox(text=valasz)
+else:
+	eg.textbox(text="Nem talalhato")
 
-for e in eredmenyek:
-	i = pages.index(e)
-	valasz.append("{} {} {} \n".format(i+1,pages[i],pageranks[i]))
-eg.textbox(text=valasz)
 '''
 try:
 	i = pages.index(reply)
