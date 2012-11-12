@@ -1,6 +1,6 @@
-Magyar Dávid 
-Médiainformatika labor 2.
-Keresõgépek
-http://qosip.tmit.bme.hu/cgi-bin/twiki/view/Meres/KeresogepekMeresiSegedlet#A_módosított_PageRank_algoritmus
+ï»¿Magyar DÃ¡vid 
+Mediainformatika labor 2.
+KeresÅ‘gÃ©pek
+http://qosip.tmit.bme.hu/cgi-bin/twiki/view/Meres/KeresogepekMeresiSegedlet#A_mÃ³dosÃ­tott_PageRank_algoritmus
 http://qosip.tmit.bme.hu/cgi-bin/twiki/view/Meres/KeresogepekFeladatok
-Elõször Perl-ben próbáltam, de undorító az a nyelv, ezért Pythonban, ha nem is sokkal könnyebben, de sikerült megoldani.
+ElÅ‘szÃ¶r Perl-ben prÃ³bÃ¡ltam, de undorÃ­tÃ³ az a nyelv, ezÃ©rt Pythonban, ha nem is sokkal kÃ¶nnyebben, de sikerÃ¼lt megoldani.
