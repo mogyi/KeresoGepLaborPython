@@ -12,6 +12,9 @@ for i in range(1,pagenumber+1):
 	pageranks.insert(int(actline[0]),actline[2])
 
 reply = eg.enterbox(msg='Kereses')
-i = pages.index(reply)
-eredmeny="{} {} {}\n".format(i+1,pages[i],pageranks[i])
+try:
+	i = pages.index(reply)
+	eredmeny="{} {} {}\n".format(i+1,pages[i],pageranks[i])
+except ValueError:
+	eredmeny="Nem talalhato"
 eg.textbox(text=eredmeny)
