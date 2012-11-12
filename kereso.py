@@ -6,7 +6,7 @@ pagenumber = int(lines[0])
 pages = []
 csucsokbol =[[] for i in range(1,pagenumber+2)]
 csucsokba =[[] for i in range(1,pagenumber+2)]
-kifok = [0 for i in range(pagenumber)]
+kifok = [0 for i in range(1,pagenumber+2)]
 
 #oldalak beolvasasa
 for i in range(1,pagenumber+1):
@@ -37,7 +37,7 @@ def pr(i):
 #pagerenkek k=100-as iteracioval
 def pagerankfunc(k=100,d=0.88):
 	
-	for n in range(k+1):
+	for n in range(1,k+1):
 		temp = [1/float(pagenumber) for i in range(1,pagenumber+1)]
 		for i in range(1,pagenumber+1):
 			temp.insert(i,(float(d) * float(pr(i)) + float(1.00-d)/float(pagenumber)))
